@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/Principal.html">Inicio</a>
+                <a id="Inicio" class="nav-link active" aria-current="page" href="/Principal.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/SecondFormulario.html">Formulario</a>
@@ -49,71 +49,75 @@
         </div>
       </nav>
 
-    <form class="row g-3 needs-validation" novalidate>
+
+      <div class="contenido">
+      <form id="tab" class="row g-3">
+        <h1>TITULO FORMULARIO</h1>
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          
+          <label for="validationServer01" class="form-label">First name</label>
+          <input type="text" class="form-control is-valid" id="validationServer01" value="Anderson" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <label for="validationServer02" class="form-label">Last name</label>
+          <input type="text" class="form-control is-valid" id="validationServer02" value="Villegas" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label">Username</label>
+          <label for="validationServerUsername" class="form-label">Username</label>
           <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
               Please choose a username.
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <label for="validationCustom03" class="form-label">City</label>
-          <input type="text" class="form-control" id="validationCustom03" required>
-          <div class="invalid-feedback">
+          <label for="validationServer03" class="form-label">City</label>
+          <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          <div id="validationServer03Feedback" class="invalid-feedback">
             Please provide a valid city.
           </div>
         </div>
         <div class="col-md-3">
-          <label for="validationCustom04" class="form-label">State</label>
-          <select class="form-select" id="validationCustom04" required>
+          <label for="validationServer04" class="form-label">State</label>
+          <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
             <option selected disabled value="">Choose...</option>
             <option>...</option>
           </select>
-          <div class="invalid-feedback">
+          <div id="validationServer04Feedback" class="invalid-feedback">
             Please select a valid state.
           </div>
         </div>
         <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="validationCustom05" required>
-          <div class="invalid-feedback">
+          <label for="validationServer05" class="form-label">Zip</label>
+          <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+          <div id="validationServer05Feedback" class="invalid-feedback">
             Please provide a valid zip.
           </div>
         </div>
         <div class="col-12">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+            <label id="bot" class="form-check-label" for="invalidCheck3">
               Agree to terms and conditions
             </label>
-            <div class="invalid-feedback">
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
               You must agree before submitting.
             </div>
           </div>
         </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </div><label for="disabledRange" class="form-label">Disabled range</label>
-        <input type="range" class="form-range" id="disabledRange" disabled>
+        <div id="bot" class="col-12">
+          <button id="bot" class="btn btn-primary" type="submit">Submit form</button>
+        </div>
       </form>
+    </div>
 
 
 </body>
